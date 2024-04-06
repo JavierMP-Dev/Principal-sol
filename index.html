@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="I'm Mrinmoy,and this is my personal portfolio website..">
     <meta name="keywords" content="Mrinmoy, Mrinmoy Deka, mrinmoy ">
-<!--Añadiendo comentario de saludos en la linea 9-->
+    <!--Añadiendo comentario de saludos en la linea 9-->
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
@@ -27,11 +27,11 @@
     <!------================Particulas==================================-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/dist/particles.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  
+
 </head>
 
 <body>
-    
+
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
@@ -85,7 +85,7 @@
 
             <div class="nav__btns">
                 <!--Theme Change button-->
-                <i class="uil uil-moon change-theme" id="theme-button" ></i>
+                <i class="uil uil-moon change-theme" id="theme-button" onclick="cambiarImagen()"></i>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -93,9 +93,10 @@
                 <!--Script que simula un click-->
                 <script>
                     // Esperar a que la página esté completamente cargada
-                    document.addEventListener("DOMContentLoaded", function() {
-                    // Simular el clic en el botón al cargar la página
-                    document.getElementById("theme-button").click();
+                    document.addEventListener("DOMContentLoaded", function () {
+                        // Simular el clic en el botón al cargar la página
+                        document.getElementById("theme-button").click();
+
                     });
 
                 </script>
@@ -112,75 +113,95 @@
         </div>
 
         <div id="foreground">
-     <!--==================== HOME ====================-->
-     <section class="home section" id="home">
-        <div data-aos="fade-left" class="home__container container grid">
-            <div class="home__content grid">
-                <div class="home__social">
-                    <a href="#"
-                        target="_blank" class="home__social-icon">
-                      
-                    </a>
-                    <a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit" target="_blank" class="home__social-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-                            <path d="M8 11l0 5" />
-                            <path d="M8 8l0 .01" />
-                            <path d="M12 16l0 -5" />
-                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                          </svg>
-                    </a>
-                    <a href="#" target="_blank" class="home__social-icon">
-               
-    
-                    </a>
-                </div>
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div data-aos="fade-left" class="home__container container grid ">
+                    <div class="home__content grid">
+                        <div class="home__social ">
+                            <a href="#" target="_blank" class="home__social-icon ">
 
-                <div data-aos="fade-right" class="home__img">
-                    <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            </a>
+                            <a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit" target="_blank"
+                                class="home__social-icon ">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-brand-linkedin ocultar" width="44" height="44"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="#00abfb" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                                    <path d="M8 11l0 5" />
+                                    <path d="M8 8l0 .01" />
+                                    <path d="M12 16l0 -5" />
+                                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="home__social-icon">
+
+
+                            </a>
+                        </div>
+
+                        <div data-aos="fade-right" class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                             130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                             97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
                             0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                        </mask>
-                       <!--- <g mask="url(#mask0)">
+                                </mask>
+                                <!--- <g mask="url(#mask0)">
                             <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                             165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                             129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                             -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                         </g>
                         -->
-                            <image class="home__blob-img" x="12" y="18" href="assets/img/solt_B.png" />
-                        
-                    </svg>
-                </div>
+                                <image id="logo" class="home__blob-img" x="12" y="18" href="assets/img/solt_w.png" />
+                                <!---script para cambiar las imagenes de blanco a negro--->
+                                <script>
+                                    // Función para cambiar la imagen
+                                    function cambiarImagen() {
+                                        var imagen = document.getElementById("logo");
+                                        // Verificar qué imagen está actualmente mostrándose
+                                        if (imagen.src.endsWith("solt_w.png")) {
+                                            imagen.src = "../img/solt_b.png"; // Cambiar a la imagen de tema oscuro
+                                            imagen.alt = "Imagen en tema oscuro"; // Cambiar el texto alternativo si es necesario
+                                        } else {
+                                            imagen.src = "../img/solt_w.png"; // Volver a la imagen de tema claro
+                                            imagen.alt = "Imagen en tema claro"; // Cambiar el texto alternativo si es necesario
+                                        }
+                                </script>
 
-                <div class="home__data">
-                    <h1 class="home_title">Hola!<span class="wave">👋</span>, Somos SOLTAD</h1>
-                    <h3 class="home__subtitle">
-                         <span class="auto-input"></span>
-                    </h3>
-                    <p class="home__description">
-                        Somos una empresa comprometida con la excelencia, ofreciendo soluciones innovadoras y personalizadas para impulsar el crecimiento y el éxito de tu negocio. 
-                    </p>
-                   <!--- <a href="#contact" class="button button--flex">
+
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home_title">Hola!<span class="wave">👋</span>, Somos SOLTAD</h1>
+                            <h3 class="home__subtitle">
+                                <span class="auto-input"></span>
+                            </h3>
+                            <p class="home__description">
+                                Somos una empresa comprometida con la excelencia, ofreciendo soluciones innovadoras y
+                                personalizadas para impulsar el crecimiento y el éxito de tu negocio.
+                            </p>
+                            <!--- <a href="#contact" class="button button--flex">
                         Contact Me <i class="uil uil-message button__icon"></i>
                     </a>-->
-                </div>
-            </div>
+                        </div>
+                    </div>
 
-            <div class="home__scroll">
-                <a href="#about" class="home__scroll-button button--flex">
-                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                    <span class="home__scroll-name"> Scroll down</span>
-                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name"> Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
 
 
@@ -194,9 +215,12 @@
 
                 <div class="about__data">
                     <p class="about__description">
-                        En SOLTAD, nos dedicamos a ofrecerte soluciones innovadoras y personalizadas para tus necesidades de diseño y desarrollo web. Con un equipo experimentado y apasionado, nos comprometemos a brindarte resultados excepcionales que impulsen tu presencia en línea y hagan destacar tu marca. <br>
+                        En SOLTAD, nos dedicamos a ofrecerte soluciones innovadoras y personalizadas para tus
+                        necesidades de diseño y desarrollo web. Con un equipo experimentado y apasionado, nos
+                        comprometemos a brindarte resultados excepcionales que impulsen tu presencia en línea y hagan
+                        destacar tu marca. <br>
 
-                       
+
                     </p>
 
                     <div class="about_info">
@@ -217,7 +241,7 @@
                         </div>
                     </div>
 
-                   <!--- <div class="about__buttons">
+                    <!--- <div class="about__buttons">
                         <a download="" href="assets/pdf/mrinmoy-cv.pdf" class="button button--flex">
                             Download CV <i class="uil uil-download-alt button__icon"></i>
                         </a>
@@ -311,7 +335,7 @@
                                             width="20px" alt=""> PHP</h3>
                                     <span class="skills__number"></span>
                                 </div>
-                              <div class="skills__bar">
+                                <div class="skills__bar">
                                     <span class="skills__percentage skills__html"></span>
                                 </div>
                             </div>
@@ -405,103 +429,104 @@
 
 
         </section>
-<!--==================== Clientes ====================-->
-<section class="certificate section" id="clientes">
-    <h2 class="section__title" >Nuestros clientes</h2>
-    <!--Seccion clientes-->
-    <section class="clientes separador" id="clientes">
-        <br><br><br><br><br>
-        <div class="slider">
-            <div class="slide-track">
-      
-              <div class="slide">
-                <img src="img/logos/arona residencial.png" class="tam_logo blan som" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/casasAra.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/ChB_LOGO.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/endress+hauser.svg" tooltip="Endress+Hauser" class="tam_logo_cli blan" alt="Endress 
-            +Hauser">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/pemex.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/ford irapuato.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/FS-Punta-Mita.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/colinas del valle.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/Constru aditivos.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/conturmex.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/diane.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/ealterna.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-      
-              <div class="slide">
-                <img src="img/logos/escondida.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/florida.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/logo-rentas-com.png" class="tam_logo_cli blan"  alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/logoMichSHORT.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/solis impresores.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/despierto.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/surgicare.png" class="tam_logo_cli blan" alt="">
-              </div>
-      
-              <div class="slide">
-                <img src="img/logos/tecnoarmour.png" class="tam_logo_cli blan" alt="">
-              </div>
-            </div>
-          </div>
-    </section>
-    <br><br>
-</section>
+        <!--==================== Clientes ====================-->
+        <section class="certificate section" id="clientes">
+            <h2 class="section__title">Nuestros clientes</h2>
+            <!--Seccion clientes-->
+            <section class="clientes separador" id="clientes">
+                <br><br><br><br><br>
+                <div class="slider">
+                    <div class="slide-track">
 
-  
+                        <div class="slide">
+                            <img src="img/logos/arona residencial.png" class="tam_logo blan som" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/casasAra.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/ChB_LOGO.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/endress+hauser.svg" tooltip="Endress+Hauser" class="tam_logo_cli blan"
+                                alt="Endress 
+            +Hauser">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/pemex.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/ford irapuato.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/FS-Punta-Mita.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/colinas del valle.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/Constru aditivos.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/conturmex.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/diane.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/ealterna.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+
+                        <div class="slide">
+                            <img src="img/logos/escondida.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/florida.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/logo-rentas-com.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/logoMichSHORT.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/solis impresores.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/despierto.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/surgicare.png" class="tam_logo_cli blan" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/logos/tecnoarmour.png" class="tam_logo_cli blan" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br>
+        </section>
+
+
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
             <h2 class="section__title">Servicios</h2>
@@ -640,8 +665,10 @@
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Website modernos</h3>
-                            <p class="portfolio__description">Website adaptables a diferentes dispositivos, con animaciones e intuitivos.</p>
-                            <a href="https://democapacitacion.com/escuela/" class="button button--flex button--small portfolio_-button" target="_blank">
+                            <p class="portfolio__description">Website adaptables a diferentes dispositivos, con
+                                animaciones e intuitivos.</p>
+                            <a href="https://democapacitacion.com/escuela/"
+                                class="button button--flex button--small portfolio_-button" target="_blank">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -653,9 +680,11 @@
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Empower the school</h3>
-                            <p class="portfolio__description">Sitio web adaptable a todos los dispositivos, con cuentas de usuarios y
+                            <p class="portfolio__description">Sitio web adaptable a todos los dispositivos, con cuentas
+                                de usuarios y
                                 cursos.</p>
-                            <a href="https://empowertheschool.com/" class="button button--flex button--small portfolio_-button">
+                            <a href="https://empowertheschool.com/"
+                                class="button button--flex button--small portfolio_-button">
                                 Ir
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -668,8 +697,9 @@
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Rancho majahua</h3>
                             <p class="portfolio__description">Pagina web personalizada para la venta de lotes.</p>
-                            <a href="https://www.ranchomajahua.com/index.html" class="button button--flex button--small portfolio_-button" target="_blank">
-                               Ir
+                            <a href="https://www.ranchomajahua.com/index.html"
+                                class="button button--flex button--small portfolio_-button" target="_blank">
+                                Ir
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -708,7 +738,7 @@
             </div>
         </section>
 
-      
+
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
             <h2 class="section__title">Contacto</h2>
@@ -723,9 +753,9 @@
                             <h3 class="contact__title">Email</h3>
                             <span class="contact__subtitle"> admin@soltad.com</span>
                         </div>
-                    
-                   </div>
-                  <!---   <div class="contact__information">
+
+                    </div>
+                    <!---   <div class="contact__information">
                         <i class="uil uil-github-alt contact__icon"></i>
                         <div>
                             <h3 class="contact__title">Github</h3>
@@ -733,10 +763,9 @@
                         </div>
                     </div>  -->
                 </div>
-              
 
-                <form action="https://formspree.io/f/mwkgqdyy" method="POST"
-                    class="contact__form grid">
+
+                <form action="https://formspree.io/f/mwkgqdyy" method="POST" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Nombre</label>
@@ -768,35 +797,35 @@
         </section>
     </main>
 
-    
+
     <!---Incio boton whats-->
     <a href="https://api.whatsapp.com/send?phone=7122069005" class="btn-wsp" target="_blank">
-	    <i class="fa fa-whatsapp icono"></i>
-	</a>
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
     <!--Icon-Font-->
-  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 
     <!--Fin boton whats--->
 
-<script>
-    particlesJS("particles", {
-      particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#ffffff" },
-        shape: { type: "circle", stroke: { width: 0, color: "#000000" }, polygon: { nb_sides: 5 }, image: { src: "img/github.svg", width: 100, height: 100 } },
-        opacity: { value: 0.5, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.1, sync: false } },
-        size: { value: 5, random: true, anim: { enable: true, speed: 2, size_min: 0.1, sync: false } },
-        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 6, direction: "none", random: true, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } }
-      },
-      interactivity: {
-        detect_on: "canvas", events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
-        modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } },
-        mouse: {}
-      },
-      retina_detect: true,
-    });
-  </script>
+    <script>
+                                    particlesJS("particles", {
+                                        particles: {
+                                            number: { value: 80, density: { enable: true, value_area: 800 } },
+                                            color: { value: "#ffffff" },
+                                            shape: { type: "circle", stroke: { width: 0, color: "#000000" }, polygon: { nb_sides: 5 }, image: { src: "img/github.svg", width: 100, height: 100 } },
+                                            opacity: { value: 0.5, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.1, sync: false } },
+                                            size: { value: 5, random: true, anim: { enable: true, speed: 2, size_min: 0.1, sync: false } },
+                                            line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+                                            move: { enable: true, speed: 6, direction: "none", random: true, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } }
+                                        },
+                                        interactivity: {
+                                            detect_on: "canvas", events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+                                            modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } },
+                                            mouse: {}
+                                        },
+                                        retina_detect: true,
+                                    });
+    </script>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
@@ -822,22 +851,25 @@
                 <div class="footer__socials">
                     <a href="https://www.instagram.com/invites/contact/?i=1nzdie95dni4q&utm_content=p6o72vi"
                         target="_blank" class="footer__social">
-                    <!---    <i class="uil uil-instagram"></i></a>   -->
+                        <!---    <i class="uil uil-instagram"></i></a>   -->
                     </a>
 
-                    <a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit" target="_blank" class="footer__social">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit" target="_blank"
+                        class="footer__social">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
                             <path d="M8 11l0 5" />
                             <path d="M8 8l0 .01" />
                             <path d="M12 16l0 -5" />
                             <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                          </svg>
+                        </svg>
                     </a>
 
                     <a href="https://twitter.com/mrinmoy91013697" target="_blank" class="footer__social">
-                       <!---   <i class="uil uil-twitter-alt"></i></a>-->
+                        <!---   <i class="uil uil-twitter-alt"></i></a>-->
                     </a>
                 </div>
             </div>
@@ -860,26 +892,26 @@
     <!--=================== Animated text ===============-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        var typed = new Typed(".auto-input", {
-            strings: [
-                " Desarrollo WEB",
-                " Diseño UX",
-                " ",
-                " Diseño UI",
-            ],
-            typeSpeed: 100,
-            backSpeed: 100,
-            loop: true,
-        });
+                                    var typed = new Typed(".auto-input", {
+                                        strings: [
+                                            " Desarrollo WEB",
+                                            " Diseño UX",
+                                            " ",
+                                            " Diseño UI",
+                                        ],
+                                        typeSpeed: 100,
+                                        backSpeed: 100,
+                                        loop: true,
+                                    });
     </script>
 
     <!--=================== Animate scroll js ===============-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({
-            offset: 300,
-            duration: 2000
-        });
+            AOS.init({
+                offset: 300,
+                duration: 2000
+            });
     </script>
 
 </body>
