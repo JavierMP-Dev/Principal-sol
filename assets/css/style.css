@@ -314,6 +314,10 @@ img {
 .home__blob-img {
   width: 170px;
 }
+svg.home__blob {
+  display: none
+  
+}
 
 .home__data {
   grid-column: 1/3;
