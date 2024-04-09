@@ -336,6 +336,7 @@ svg.home__blob {
 
 .home__description {
   margin-bottom: var(--mb-2);
+  text-align: justify;
 }
 
 .home__scroll-button {
@@ -420,8 +421,9 @@ svg.home__blob {
 }
 
 .about__description {
-  text-align: center;
+  text-align: justify;
   margin-bottom: var(--mb-2-5);
+  
 }
 
 .about_info {
@@ -1131,7 +1133,7 @@ footer .footer__social a:hover {
   }
 
   .about__description {
-    text-align: initial;
+    text-align: justify;
   }
 
   .about__info {
